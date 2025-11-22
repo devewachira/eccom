@@ -1,0 +1,37 @@
+.homepage {
+  .home-carousel {
+    /* Match height of two side banners (2 * 180px) plus gap (~16px) */
+    height: 376px;
+
+    @media (min-width: 1200px) {
+      /* Match 2 * 210px + 16px gap on large screens */
+      height: 436px;
+    }
+
+    .carousel-container {
+      height: 100%;
+    }
+
+    .carousel-slider-item {
+      height: 100%;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+
+  .side-banners {
+    img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+
+      @media (min-width: 1200px) {
+        height: 210px;
+      }
+    }
+  }
+}

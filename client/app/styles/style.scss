@@ -1,0 +1,22 @@
+/* ChrisHub Theme */
+
+// Import utilities
+@import 'core/utils/fonts';
+@import 'core/utils/reset';
+@import 'core/variables';
+
+// Override Bootstrap variables
+$body-bg: $secondary-bg;
+$card-bg: $secondary-bg;
+$modal-content-bg: $secondary-bg;
+$list-group-bg: $secondary-bg;
+$input-bg: $secondary-bg;
+
+// Import Bootstrap source files
+@import 'node_modules/bootstrap/scss/bootstrap';
+
+// Import core styles
+@import 'core/core';
+
+// Import custom styles
+@import 'custom';
