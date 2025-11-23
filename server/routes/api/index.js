@@ -55,6 +55,7 @@ router.use('/review', reviewRoutes);
 router.use('/wishlist', wishlistRoutes);
 
 // banner routes
-router.use('/banner', bannerRoutes);
+router.use('/banner', require('./banner'));
+router.use('/metrics', require('./metrics'));
 
 module.exports = router;

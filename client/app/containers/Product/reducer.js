@@ -59,14 +59,14 @@ const initialState = {
     category: 'all',
     brand: 'all',
     min: 1,
-    max: 2500,
+    max: 500000,
     rating: 0,
     order: 0,
     totalPages: 1,
     currentPage: 1,
     count: 0,
     limit: 10
-  }
+  },
 };
 
 const productReducer = (state = initialState, action) => {

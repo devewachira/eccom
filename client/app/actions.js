@@ -31,6 +31,7 @@ import * as order from './containers/Order/actions';
 import * as review from './containers/Review/actions';
 import * as wishlist from './containers/WishList/actions';
 import * as banner from './containers/Banner/actions';
+import * as metrics from './containers/Metrics/actions';
 
 export default function mapDispatchToProps(dispatch) {
   return bindActionCreators(
@@ -59,7 +60,8 @@ export default function mapDispatchToProps(dispatch) {
       ...order,
       ...review,
       ...wishlist,
-      ...banner
+      ...banner,
+      ...metrics
     },
     dispatch
   );

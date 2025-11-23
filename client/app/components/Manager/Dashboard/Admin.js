@@ -24,6 +24,7 @@ import Merchant from '../../../containers/Merchant';
 import Review from '../../../containers/Review';
 import Wishlist from '../../../containers/WishList';
 import Banner from '../../../containers/Banner';
+import Metrics from '../../../containers/Metrics';
 
 const Admin = props => {
   return (
@@ -47,6 +48,7 @@ const Admin = props => {
               <Route path='/dashboard/review' component={Review} />
               <Route path='/dashboard/wishlist' component={Wishlist} />
               <Route path='/dashboard/banner' component={Banner} />
+              <Route path='/dashboard/metrics' component={Metrics} />
               <Route path='*' component={Page404} />
             </Switch>
           </div>
